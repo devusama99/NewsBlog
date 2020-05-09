@@ -1,0 +1,23 @@
+#home-articles .articles-container article:first-child,
+#home-articles .articles-container article:last-child
+{
+    grid-template-columns: 1fr;
+    grid-column: 1;
+}
+#home-articles .articles-container 
+{
+    grid-template-columns: repeat(2,1fr);
+}
+#container4
+{
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 5rem;
+}
+#container2 h1
+{
+    font-size: 5rem;
+}
+#container2 p
+{
+    font-size: 1.2rem;
+}

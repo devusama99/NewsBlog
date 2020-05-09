@@ -1,0 +1,429 @@
+:root
+{
+    --primart-color:#FE4500;
+    --secondary-color:rgb(212,41,41);
+    --jet-black:#111;
+}
+.category
+{
+    --sports-color:#f99500;
+    --ent-color:#a66bbe;
+    --tech-color:#009cff;
+}
+html
+{
+    font-size: 10px;
+    scroll-behavior: smooth;
+}
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    background-color: #EEEEEE;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
+}
+a
+{
+    color: inherit;
+    text-decoration: none;
+}
+ul
+{
+    list-style: none;
+}
+li
+{
+    display: inline-block;
+    margin: 0.5rem 1rem;
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+    color: var(--primart-color);
+    background: #222;
+    border-radius: 7px;
+    text-align: center;
+    transition: 0.2s ease;
+}
+i
+{
+    color: var(--primart-color);
+    margin: 1rem;
+    transition: all 0.2s ease;
+}
+i:hover
+{
+    transform: scale(1.5);
+    color: var(--secondary-color);
+}
+.current
+{
+    background-color: var(--primart-color);
+    color: #fff;
+}
+.logo
+{
+    width: 70px;
+}
+ul
+{
+    text-align: right;
+    
+}
+.social
+{
+    text-align: center;
+}
+#container
+{
+    margin: auto;
+    max-width: 1100px;
+    padding: 0.5rem 0;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr
+}
+#main-nav
+{
+    background-color: var(--jet-black);
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    padding: 0 2rem;
+    align-items: center;
+}
+#main-nav li:hover
+{
+    color: #fff;
+    background:  var(--secondary-color);
+    transform: scale(1.2);
+}
+.showcase
+{
+    background: url(../img/showcase.jpg) no-repeat center center/cover;
+    height: 80vh;
+}
+#container2
+{
+    margin: auto;    
+    padding: 0 3rem;
+    max-width: 1100px;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    height: 75vh;
+    
+}
+#container2 h1
+{
+    color: var(--primart-color);
+    font-size: 6rem;
+    line-height: 1.1;
+}
+#container2 p
+{
+    color: #f9f9f9;
+    font-size: 1.5rem;
+}
+.btn
+{
+    background: #222;
+    padding: 0.5rem 1rem;
+    color: var(--primart-color);
+    line-height: 3;
+    font-size: 1.5rem;
+    border-radius: 3px;
+    transition: all 0.8s ease;
+}
+.btn:hover
+{
+    background-color: var(--primart-color);
+    color: #111;
+    border-radius: 20px;
+}
+.category 
+{
+    padding: 0.3rem 1rem;
+    text-transform: uppercase;
+    font-size: 1.2rem !important;
+    display: inline-block;
+    border-radius: 20px;
+}
+.category >p
+{
+    font-size: 1rem;
+}
+.category-sports
+{
+    background-color: var(--sports-color);    
+}
+.category-ent
+{
+    background-color: var(--ent-color);    
+}
+.category-tech
+{
+    background-color: var(--tech-color);    
+}
+.container3
+{
+    padding: 3rem 2rem;
+}
+img
+{
+    width:100%;
+        
+}
+.card
+{
+    overflow: hidden;
+    background: #fff;
+    border-radius: 5px;
+}
+#home-articles
+{
+    text-align: center;
+    padding-top: 1rem;
+}
+#home-articles .card p
+{
+    font-size:1.1rem ;
+}
+#home-articles .card span
+{
+    font-size:1rem ;
+    color: white;
+}
+#home-articles .container3 >h2
+{
+    line-height: 1;
+    margin-bottom: 2rem;
+    font-size: 4rem;
+    color: var(--primart-color);
+}
+#home-articles .container3 h3
+{
+    font-size: 1.7rem;
+}
+#home-articles .articles-container
+{
+    margin: auto;
+    max-width: 1100px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 3rem 2rem;
+    text-align: left;
+}
+.card > div
+{
+    margin: 1rem;
+}
+#home-articles .articles-container article:first-child
+{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+    grid-column: 1 /span 2;
+}
+#home-articles .articles-container article:last-child
+{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+    grid-column: 2 /span 2;
+}
+#home-articles .articles-container article:nth-child(2)
+{
+    background-color: rgb(212,41,41);
+    color: #fff;
+}
+#home-articles .articles-container article:nth-child(6)
+{
+    background-color:#222;
+    color: #fff;
+}
+
+/* footer */
+.footer
+{
+    background-color: #111111;
+    color: #fff;
+    padding: 0 2rem;
+    padding-top:2rem;
+    text-align: center;
+}
+#container4
+{
+    text-align: justify;
+    margin: auto;
+    max-width: 1100px;
+    display: grid;
+    grid-template-columns: 1.5fr 2fr 1fr 2fr;
+    grid-gap: 3rem;
+}
+#container4 >div img
+{
+    width: 70px;
+    line-height: 1.5;
+    margin-bottom: 0.7rem;
+}
+#container4 p
+{
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+#container4 h1
+{
+    color: var(--secondary-color);
+    font-size: 2.3rem;
+    margin-bottom: 1rem;
+}
+#container4 div:nth-child(2) input
+{
+    width: 100%;
+    margin-bottom: 0.5rem;
+}
+#container4 div:nth-child(2) input:first-child
+{
+    color: var(--secondary-color);
+    background: #111;
+    border: none;
+    border-bottom: solid var(--primart-color) 2px;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+}
+#container4 div:nth-child(2) input:last-child
+{
+    color:#fff;
+    font-size: 1.3rem;
+    font-weight: bold;
+    background: var(--secondary-color);
+    line-height: 1.8;
+    border: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+#container4 div:nth-child(2) input:last-child:hover
+{
+    background-color: var(--primart-color);
+}
+
+#container4 div:nth-child(3) ul li
+{
+    margin: 0;
+    padding: 0;
+    line-height: 2.5;
+    font-size: 1.3rem;
+    text-align: left;
+    background: none;
+    border-radius: 0;
+    display: block;
+    border-bottom: #222 solid 1px;
+    color: lightcoral;
+    max-width: 120px;
+}
+#container4 div:nth-child(3) ul li:last-child
+{
+    border: none;
+}
+#container4 div:nth-child(3) ul li:hover
+{
+    color: var(--secondary-color);
+    transform: translateX(4px);
+    font-size: 1;
+}
+#container4 div:nth-child(4) input
+{
+    width: 100px;
+    background-color: var(--secondary-color);
+    color: #fff;
+    font-size:1.3rem;
+    font-weight: bold;
+    border: none;
+    padding: 0.5rem;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+#container4 div:nth-child(4) input:hover
+{
+   background-color: var(--primart-color);
+}
+.rights
+{
+    margin-top: 3rem;
+    font-size: 1.3rem;
+    border-top: solid #222 1px;
+    line-height: 4;
+}
+/*         ABOUT PAGE       */
+.acontainer
+{
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    padding: 2rem;
+    grid-template-columns: 3fr 1fr;
+    grid-gap: 2rem;
+}
+.acard
+{
+    background-color: #f9f9f9;
+    padding: 2rem ;
+    margin: 2rem 0.5rem;
+    text-align: center;
+    border-radius: 3px;
+}
+.acard h1
+{
+    text-align: center;
+    font-size: 4rem;
+    font-weight: bold;
+    color: var(--primart-color);
+    margin-bottom: 1rem;
+}
+.acard p
+{
+    font-size: 1.2rem;
+    text-align: center;
+}
+.acard img
+{
+    margin: auto;
+    width: 150px;
+}
+.acard:last-child
+{
+    background-color: var(--secondary-color);
+    text-align: center;
+    padding: 1rem 1.5rem;
+}
+.acard:first-child
+{
+
+    grid-row: 1 /span 3;
+}
+.acard:last-child h2
+{
+    color: #fff;
+    font-size: 2rem;
+}
+.acard:last-child a
+{
+    display: block;
+    background: var(--jet-black);
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    /* line-height: 3; */
+    transition: 0.3s ;
+    border-radius: 2px;
+}
+.acard:last-child a:hover
+{
+    background: var(--primart-color);
+    color: #000;
+    transform: scale(0.95);
+}

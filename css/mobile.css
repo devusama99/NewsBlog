@@ -1,0 +1,40 @@
+#home-articles .articles-container article:first-child,
+#home-articles .articles-container article:last-child
+{
+    grid-template-columns: 1fr;
+    grid-column: 1;
+}
+#home-articles .articles-container 
+{
+    grid-template-columns: 1fr;
+}
+#container4
+{
+    grid-template-columns: 1fr;
+    grid-gap: 1.5rem;
+}
+.social
+{
+    display: none;
+}
+#container
+{
+    grid-template-columns: 1fr 1fr;
+}
+#container2 h1
+{
+    font-size: 6rem;
+}
+#container2 p
+{
+    font-size: 1.2rem;
+}
+.footer .rights
+{
+    font-size: 1rem;
+}
+/* about */
+.acontainer
+{
+    grid-template-columns: 1fr;
+}
